@@ -1,9 +1,9 @@
 <?php
 $saludo = "Hola" . " " . "Mundo";
-echo $saludo; // Imprime: Hola Mundo
+echo $saludo;
 
 $texto = "Buenos ";
-$texto .= "días"; // Ahora $texto contiene "Buenos días"
+$texto .= "días"; 
 ?>
 <?php
 $dominio = "https://mi-tienda.com";
@@ -12,5 +12,4 @@ $id = 123;
 
 $url = $dominio . "/" . $pagina . "?id=" . $id;
 echo $url;
-// Imprime: https://mi-tienda.com/productos?id=123
 ?>
