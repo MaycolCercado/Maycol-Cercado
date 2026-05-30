@@ -1,18 +1,4 @@
 <?php
-/*El Reto: Sistema de Clasificación de Gimnasio
-Vas a crear un script donde se ingrese el nombre de una persona y su edad. El programa debe determinar a qué categoría pertenece y cuánto debe pagar de inscripción mensual:
-
-Categoría Infantil: De 5 a 12 años. Pago: S/ 50.
-
-Categoría Juvenil: De 13 a 17 años. Pago: S/ 80.
-
-Categoría Adulto: De 18 a 60 años. Pago: S/ 120.
-
-Categoría Adulto Mayor: Más de 60 años. Pago: S/ 60.
-
-Restricción: Si tiene menos de 5 años, el programa debe decir que no tiene edad suficiente para inscribirse.
-*/
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
