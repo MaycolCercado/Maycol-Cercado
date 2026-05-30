@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         $gastado += $precio_actual;
-        $log[] = "✅ Comprado: <strong>$nombre_actual</strong> por S/ " . number_format($precio_actual, 2);
+        $log[] = " Comprado: <strong>$nombre_actual</strong> por S/ " . number_format($precio_actual, 2);
         $i++;
     }
 }
