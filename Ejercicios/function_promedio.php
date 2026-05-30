@@ -1,16 +1,5 @@
 <?php
-/*
-El Reto: Sistema de Promedios y Becas
-Crea un script donde se ingresen 3 notas (de 0 a 20)
- y el nombre del estudiante. El programa debe hacer lo siguiente:
-Calcular el promedio.
-Determinar el estado:
-Aprobado: Promedio mayor o igual a 13.
-Desaprobado: Promedio menor a 13.
-Determinar si aplica a Beca:
-Solo si está Aprobado Y su promedio es mayor o igual a 18.
-Validación Especial: Si alguna de las notas ingresadas es mayor a 20 o menor a 0, debe mostrar un error.
-*/
+
 function promedio(){
 
     $comu = $_POST ["comu"];
