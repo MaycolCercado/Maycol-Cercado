@@ -1,13 +1,4 @@
 <?php
-/*
-El Reto: Calculadora de Descuentos Progresivos
-Crea un sistema para una tienda donde se ingrese el nombre del producto y su precio.
-El programa debe aplicar un descuento dependiendo de cuánto gaste el cliente:
-
-Si gasta menos de 100, el descuento es 0%.
-Si gasta entre 100 y 500, el descuento es 10%.
-Si gasta más de 500, el descuento es 20%.
-*/
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $nombre = $_POST["nombre"];
 $precio = $_POST["precio"];
