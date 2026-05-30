@@ -1,14 +1,4 @@
 <?php
-/*
-Para PHP, un ejercicio excelente para empezar es crear un Validador de 
-Inicio de Sesión (Login) básico. Este ejercicio te ayudará a practicar 
-la captura de datos de formularios, el uso de arreglos y, por supuesto, 
-las estructuras condicionales que estábamos viendo.El Reto: Sistema de 
-Acceso Crea un script donde un usuario ingrese su nombre de usuario y una
-contraseña. El programa debe validar si los datos coinciden con un "usuario
-registrado" en el sistema.
-*/
-
 $nombre = "Maycol";
 $contraseña = "May9123";
 
