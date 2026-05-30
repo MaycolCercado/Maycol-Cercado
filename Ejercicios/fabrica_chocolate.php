@@ -5,23 +5,21 @@ $pesoTotalDia = 0;
 $reporteCajas = [];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // BUCLE EXTERIOR: Producimos 3 cajas al día
+    
     for ($i = 1; $i <= 3; $i++) {
-        $capacidadCaja = 500; // gramos
+        $capacidadCaja = 500; 
         $pesoActualCaja = 0;
         $bombonesEnCaja = 0;
         $premiumEnCaja = 0;
 
-        // BUCLE INTERIOR: Llenamos la caja actual
+        
         while ($pesoActualCaja < $capacidadCaja) {
             $pesoBombon = rand(50, 100);
 
-            // Verificamos si cabe el bombón
             if (($pesoActualCaja + $pesoBombon) > $capacidadCaja) {
-                break; // Caja llena, pasamos a la siguiente
+                break;
             }
 
-            // Lógica de producción
             $pesoActualCaja += $pesoBombon;
             $bombonesEnCaja++;
             
@@ -31,7 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        // Acumulamos totales del día
         $totalBombonesDia += $bombonesEnCaja;
         $pesoTotalDia += $pesoActualCaja;
         
@@ -47,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Fábrica de Chocolates</title>
 </head>
 <body>
-    <h1>🍫 Producción de Chocolates</h1>
+    <h1> Producción de Chocolates</h1>
     <form method="POST">
         <button type="submit">Iniciar Producción del Día</button>
     </form>
