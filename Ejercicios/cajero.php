@@ -1,19 +1,17 @@
 <?php
-$detalles_escaneo = ""; // Variable para guardar el texto del bucle
+$detalles_escaneo = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $nombre = $_POST["nombre"];
-    $cantidad = (int)$_POST["cantidad"]; // Convertimos a entero por seguridad
-    $precio = (float)$_POST["precio"];  // Convertimos a decimal
+    $cantidad = (int)$_POST["cantidad"]; 
+    $precio = (float)$_POST["precio"]; 
     $descuento = 0;
 
-    // EL BUCLE: Simulamos el escaneo de cada producto uno por uno
     for ($i = 1; $i <= $cantidad; $i++) {
         $detalles_escaneo .= "Producto #$i escaneado... <br>";
     }
 
-    // CONDICIONES: Lógica de descuentos
     if ($cantidad > 10) {
         $descuento = 0.2;
     } elseif ($cantidad >= 5) {
