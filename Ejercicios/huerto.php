@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($lluvia) {
             $regadofallido++;
-            $reporte[] = "❌ Huerto #$i: ¡No se lleno porque va llover! | cantidad regada $sumagoteo ml";
+            $reporte[] = " Huerto #$i: ¡No se lleno porque va llover! | cantidad regada $sumagoteo ml";
         } else {
             $regadoexitoso++;
-            $reporte[] = "🪴 Huerto #$i: Se rego con $sumagoteo ml.";
+            $reporte[] = " Huerto #$i: Se rego con $sumagoteo ml.";
     }
 }
 }
