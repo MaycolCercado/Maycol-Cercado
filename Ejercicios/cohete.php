@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($fallaDetectada) {
             $cohetesFallidos++;
-            $reporte[] = "❌ Cohete #$i: ¡FUGA DETECTADA! (Carga fallida de 130L).";
+            $reporte[] = " Cohete #$i: ¡FUGA DETECTADA! (Carga fallida de 130L).";
         } else {
             $cohetesExitosos++;
-            $reporte[] = "🚀 Cohete #$i: DESPEGUE EXITOSO con $capacidadactual litros.";
+            $reporte[] = " Cohete #$i: DESPEGUE EXITOSO con $capacidadactual litros.";
     }
 }
 }
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Document</title>
 </head>
 <body>
-    <h1>🚀👨‍🚀Despegues de cohetes</h1>
+    <h1>Despegues de cohetes</h1>
     <form method="POST">
         <button type="submit">Iniciar Producción del Día</button>
     </form>
