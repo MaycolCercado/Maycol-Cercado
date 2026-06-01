@@ -1,9 +1,9 @@
 <?php
 class Conexion {
     public static function conectar() {
-        $host = "localhost";
-        $db = "test1";
-        $user = "root";
+        $host = "";
+        $db = "";
+        $user = "";
         $pass = "";
 
         try {
